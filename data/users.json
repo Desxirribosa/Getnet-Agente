@@ -1,0 +1,36 @@
+{
+  "cliente1988": {
+    "name": "Padaria Bom Dia",
+    "city": "Porto Alegre - RS",
+    "bank": "Santander",
+    "pix_enabled": true,
+    "plan": { "name": "Getnet Flex", "debit_days": 1, "credit_days": 2 },
+    "terminals": [
+      { "serial": "GSM-001", "model": "Get Smart", "status": "offline", "wifi": "disconnected", "chip_signal": "weak", "battery_pct": 64, "last_seen_hours_ago": 3 },
+      { "serial": "GCL-002", "model": "Get Clássica", "status": "online", "wifi": "off", "chip_signal": "good", "battery_pct": 91, "last_seen_hours_ago": 0 }
+    ],
+    "transactions": [
+      { "id": "T1", "day_offset": -1, "type": "debit",  "brand": "Mastercard", "amount": 50.00,  "status": "approved", "terminal": "GCL-002" },
+      { "id": "T2", "day_offset": -1, "type": "credit", "brand": "Visa",       "amount": 120.00, "status": "approved", "terminal": "GSM-001" },
+      { "id": "T3", "day_offset": -1, "type": "pix",    "brand": "Pix",        "amount": 30.00,  "status": "approved", "terminal": "GSM-001" },
+      { "id": "T4", "day_offset": -1, "type": "credit", "brand": "Elo",        "amount": 360.00, "status": "approved", "terminal": "GCL-002" },
+      { "id": "T5", "day_offset": 0,  "type": "credit", "brand": "Visa",       "amount": 89.90,  "status": "declined", "code": "51", "terminal": "GSM-001" },
+      { "id": "T6", "day_offset": 0,  "type": "credit", "brand": "Mastercard", "amount": 89.90,  "status": "declined", "code": "91", "terminal": "GSM-001" },
+      { "id": "T7", "day_offset": 0,  "type": "debit",  "brand": "Mastercard", "amount": 89.90,  "status": "approved", "terminal": "GCL-002" }
+    ]
+  },
+  "cliente2024": {
+    "name": "Ana Souza MEI",
+    "city": "São Paulo - SP",
+    "bank": "Itaú",
+    "pix_enabled": false,
+    "plan": { "name": "Getnet Padrão", "debit_days": 1, "credit_days": 30 },
+    "terminals": [
+      { "serial": "GMN-003", "model": "Get Mini", "status": "online", "wifi": "off", "chip_signal": "good", "battery_pct": 40, "last_seen_hours_ago": 1 }
+    ],
+    "transactions": [
+      { "id": "T8", "day_offset": -1, "type": "credit", "brand": "Visa", "amount": 150.00, "status": "approved", "terminal": "GMN-003" },
+      { "id": "T9", "day_offset": -1, "type": "debit",  "brand": "Elo",  "amount": 60.00,  "status": "approved", "terminal": "GMN-003" }
+    ]
+  }
+}
