@@ -128,9 +128,11 @@ Testing covers agent routing, RAG retrieval, customer tools, API responses, and 
 
 The architecture keeps each agent focused on a specific responsibility, making the system easier to test, maintain, and extend.
 
-Customer data is simulated; no private Getnet production systems are accessed.
+Customer data is simulated; no private Getnet production systems are required or accesed.
 
 The initial implementation prioritizes functionality, reliability, and clear separation of responsibilities over unnecessary complexity.
+
+Requieres an OpenAI API Key.
 
 ## 10. Future Improvements
 
